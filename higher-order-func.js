@@ -78,7 +78,7 @@ created hello and goodbye funcs
 // windWarning("Kansas");
 // rocksWarning("California");
 
-
+/*
 turtlesMovements = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
 
 let turtlePostiveNum = turtlesMovements.filter( num => num[0]>=0 && num[1]>=0);
@@ -87,5 +87,21 @@ let turtleSteps = turtlePostiveNum.map(num => num[0]+num[1]);
 console.log(turtleSteps);
 turtleSteps.forEach(move => console.log(`Turtle took ${move} steps`));
 
+*/
 
 
+function decoder(str){
+    wordArray= str.split(' ');
+    letterArray= [];
+    for (let i = 0; i < wordArray.length; i++){
+        if (wordArray[i].length === 3){
+            letterArray.push(' ');
+        }
+        else {
+            letterArray.push(wordArray[i][wordArray[i].length - 1].toUpperCase());
+        }
+    }
+    return console.log(letterArray.reduce(((message, letter) => message += letter)));
+}
+
+decoder('noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest');
