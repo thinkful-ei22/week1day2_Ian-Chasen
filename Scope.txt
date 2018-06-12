@@ -1,0 +1,3 @@
+What is scope? Your explanation should include the idea of global vs. local scope.
+
+	Scope is where a variable is defined. If is defined 	outside of a function, then it has global scope, meaning that you could call the variable any where it would still have its value.  If you define a variable inside of a function, it would have local scope, and you would only be able to call it inside that function.  Meaning with local scope, variables defined inside a function wouldn't effect other code outside the function.
