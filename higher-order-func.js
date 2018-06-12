@@ -23,6 +23,10 @@ created hello and goodbye funcs
 
 // repeat(hello, 7);
 
+
+
+
+/*
 // DO NOT EDIT BETWEEN THESE LINES ----->
 // Return only names that begin with 'R'
 const myNames = ['Rich', 'Joe', 'Bhaumik', 'Ray'];
@@ -47,3 +51,27 @@ function filter(arr, fn) {
 }
 
 filter(myNames, filteredNames);
+
+*/
+//created a warningCounter
+//return a function that logs a danger message
+//returning another log message
+//where to increase counter??????
+
+
+function hazardWarningCreator(typeOfWarning){
+    let warningCounter = 0;
+    return function(location){
+        warningCounter++;
+        console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`);
+        console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} time(s) today!`);
+    }
+}
+
+const rocksWarning = hazardWarningCreator("Rocks on the Road");
+const windWarning = hazardWarningCreator("It's too windy!");
+const lightningWarning = hazardWarningCreator("look out for lightning!");
+
+rocksWarning("California");
+windWarning("Kansas");
+
