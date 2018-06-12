@@ -18,3 +18,11 @@ Explain JavaScript's strict mode
 Using strict mode ensures that a person is declaring variables with const or let, and
 if a variable is defined with var, it will throw and error message.  This makes it impossible
 to accidentally declare global variables that could mess up other code.
+
+
+What are side effects, and what is a pure function?
+
+Side effect is when a function reaches outside of its local scope to change something or some value in a parent scope.
+
+'pure functions' are functions that are determinate, meaning that when the same inputs are entered the result is the same, 
+and dont have any unintended side effects.
