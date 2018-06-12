@@ -12,3 +12,9 @@ Global variables are usually avoided because of the mess that they can create su
 consistant.  This is not something we want and it will make 
 code hard to fix.  
 
+
+Explain JavaScript's strict mode
+
+Using strict mode ensures that a person is declaring variables with const or let, and
+if a variable is defined with var, it will throw and error message.  This makes it impossible
+to accidentally declare global variables that could mess up other code.
