@@ -1,3 +1,14 @@
 What is scope? Your explanation should include the idea of global vs. local scope.
 
 	Scope is where a variable is defined. If is defined 	outside of a function, then it has global scope, meaning that you could call the variable any where it would still have its value.  If you define a variable inside of a function, it would have local scope, and you would only be able to call it inside that function.  Meaning with local scope, variables defined inside a function wouldn't effect other code outside the function.
+
+Why are global variables avoided?
+
+Global variables are usually avoided because of the mess that they can create such as a side effect, which is when
+ a function reaches outside of its
+ local scope to change something or some value in a parent scope.  Having global variables and the
+ unintended side effects that they can cause almost
+ guarantee code to become indeterminate, meaning with the same inputs the outputs are not
+consistant.  This is not something we want and it will make 
+code hard to fix.  
+
